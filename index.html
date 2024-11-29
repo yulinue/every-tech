@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every-tech</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+</head>
+<body>
+    <img src="assets/images/dec_element.png" alt="dec_element" class="dec_element">
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+
+            <a href="https://t.me/Every_tech_ru" class="header__mobile-tg" target="_blank">
+                <img src="assets/icons/tg_icon.png" alt="tg_icon" class="header__contacts-item-tg-image">
+            </a>
+
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="assets/images/logo.png" alt="logo" class="header__logo-img">
+                </a>
+    
+                <div class="header__menu">
+                    <a href="#services" class="header__menu-item">кому подойдет</a>
+                    <a href="#solutions" class="header__menu-item">что делаем</a>
+                    <a href="#questions" class="header__menu-item">частые вопросы</a>
+                </div>
+            </div>
+
+            <div class="header__contacts">
+                <a href="https://t.me/Every_tech_ru" class="header__contacts-item header__contacts-item-tg" target="_blank">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__contacts-item-tg-image">
+                        <g clip-path="url(#clip0_1_424)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M23 11.5C23 17.8512 17.8512 23 11.5 23C5.14881 23 0 17.8512 0 11.5C0 5.14881 5.14881 0 11.5 0C17.8512 0 23 5.14881 23 11.5ZM11.9131 8.49038C10.7919 8.9551 8.55677 9.92142 5.20783 11.382C4.66196 11.5959 4.38166 11.8098 4.35215 12.0164C4.30789 12.3631 4.7431 12.5032 5.3406 12.695C5.42174 12.7171 5.50289 12.7466 5.5914 12.7761C6.18153 12.9679 6.97081 13.1892 7.37652 13.1966C7.74535 13.204 8.16581 13.0491 8.62316 12.7393C11.7582 10.6222 13.3736 9.5526 13.4769 9.53047C13.5507 9.51572 13.6466 9.49359 13.713 9.5526C13.7793 9.61161 13.772 9.72226 13.7646 9.75914C13.7203 9.94355 12.0016 11.5443 11.109 12.3704C10.8287 12.6286 10.6369 12.813 10.5927 12.8499C10.5042 12.9458 10.4083 13.0343 10.3198 13.1155C9.77389 13.6392 9.36819 14.0375 10.3419 14.6793C10.814 14.9891 11.1902 15.2473 11.559 15.4981C11.9721 15.7784 12.3778 16.0513 12.9015 16.398C13.0343 16.4865 13.1671 16.575 13.2925 16.6636C13.772 17.0029 14.1998 17.3053 14.7235 17.2611C15.0334 17.2316 15.3505 16.9439 15.5128 16.0808C15.8964 14.0449 16.6414 9.63374 16.8185 7.81174C16.8332 7.64946 16.8185 7.45029 16.7963 7.36177C16.7816 7.27325 16.7521 7.14785 16.6341 7.05196C16.4939 6.94131 16.28 6.91918 16.1915 6.91918C15.7563 6.92656 15.0924 7.15523 11.8983 8.483L11.9131 8.49038Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_424">
+                            <rect width="23" height="23" fill="white" />
+                          </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="tel:+79061169966" class="header__contacts-item">+7 906 116-99-66</a>
+
+                <a href="" class="header__contacts-item header__contacts-item-green">
+                    обсудить проект
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.58998 13.78H9.67998V20.98C9.67998 22.66 10.59 23 11.7 21.74L19.27 13.14C20.2 12.09 19.81 11.22 18.4 11.22H15.31V4.02C15.31 2.34 14.4 2 13.29 3.26L5.71998 11.86C4.79998 12.92 5.18998 13.78 6.58998 13.78Z" stroke="#2C3F48" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+            <button class="header__mobile-menu-button" id="menuButton">
+                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.12207" y="1.81682" width="26.916" height="4.78146" rx="2.39073" stroke="white" stroke-width="2" />
+                    <rect x="1.12207" y="9.98317" width="26.916" height="4.78146" rx="2.39073" stroke="white" stroke-width="2" />
+                    <rect x="1.12207" y="18.153" width="26.916" height="4.78146" rx="2.39073" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+
+        </header>
+
+        <div class="header__mobile-menu" id="mobileMenu">
+            <button class="header__mobile-menu-button" id="menuButtonClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.4 24L0 21.6L9.6 12L0 2.4L2.4 0L12 9.6L21.6 0L24 2.4L14.4 12L24 21.6L21.6 24L12 14.4L2.4 24Z" fill="white" />
+                  </svg>
+            </button>
+
+            <a href="#services" class="header__menu-item">кому подойдет</a>
+            <a href="#solutions" class="header__menu-item">что делаем</a>
+            <a href="#questions" class="header__menu-item">частые вопросы</a>
+
+            <a href="tel:+79061169966" class="header__contacts-item">+7 906 116-99-66</a>
+
+            <a href="" class="header__contacts-item header__contacts-item-green">
+                обсудить проект
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.58998 13.78H9.67998V20.98C9.67998 22.66 10.59 23 11.7 21.74L19.27 13.14C20.2 12.09 19.81 11.22 18.4 11.22H15.31V4.02C15.31 2.34 14.4 2 13.29 3.26L5.71998 11.86C4.79998 12.92 5.18998 13.78 6.58998 13.78Z" stroke="#2C3F48" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <!-- header -->
+
+        <!-- consultation block -->
+         <div class="consultation">
+            <div class="consultation__text">
+                <h2><span class="green-color">aудит</span> архитектуры системы</h2>
+                <p>получите отчет с результатами анализа текущей архитектуры, включающий информацию о сильных и слабых сторонах архитектуры</p>
+            </div>
+
+            <div class="consultation__image">
+                <div class="consultation__image-text">
+                    <h2>бесплатная</h2>
+                    <h3>консультация прямо сейчас</h3>
+                </div>
+
+                <a class="consultation__image-link" id="openModal">
+                    перезвоните скорее
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.08998 13.78H9.17998V20.98C9.17998 22.66 10.09 23 11.2 21.74L18.77 13.14C19.7 12.09 19.31 11.22 17.9 11.22H14.81V4.02C14.81 2.34 13.9 2 12.79 3.26L5.21998 11.86C4.29998 12.92 4.68998 13.78 6.08998 13.78Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+            </div>
+         </div>
+
+         <div class="consultation-mobile consultation__image">
+            <div class="consultation__image-text">
+                <h2>бесплатная</h2>
+                <h3>консультация прямо сейчас</h3>
+            </div>
+
+            <a class="consultation__image-link" id="openModalMobile">
+                перезвоните скорее
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.08998 13.78H9.17998V20.98C9.17998 22.66 10.09 23 11.2 21.74L18.77 13.14C19.7 12.09 19.31 11.22 17.9 11.22H14.81V4.02C14.81 2.34 13.9 2 12.79 3.26L5.21998 11.86C4.29998 12.92 4.68998 13.78 6.08998 13.78Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+        </div>
+        <!-- consultation block -->
+
+        <!-- modal -->
+         <div class="modal__overlay" id="modalOverlay">
+            <div class="modal__container beforeSubmit" id="beforeSubmit">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal__closeIcon" id="closeModal">
+                    <g clip-path="url(#clip0_108_563)">
+                      <path d="M14 0.5C21.4558 0.5 27.5 6.54416 27.5 14C27.5 21.4558 21.4558 27.5 14 27.5C6.54416 27.5 0.5 21.4558 0.5 14C0.5 6.54416 6.54416 0.5 14 0.5Z" stroke="#B9D043" />
+                      <path d="M9.26052 19.0896C9.13899 18.968 9.05878 18.8271 9.01988 18.6667C8.981 18.5014 8.981 18.3385 9.01988 18.1782C9.05878 18.0177 9.13655 17.8791 9.25322 17.7624L12.673 14.3427L9.25322 10.9302C9.13655 10.8135 9.05878 10.675 9.01988 10.5146C8.981 10.3542 8.981 10.1938 9.01988 10.0333C9.05878 9.86804 9.13899 9.72468 9.26052 9.60316C9.3772 9.48649 9.51571 9.40865 9.67615 9.36983C9.84144 9.32604 10.0043 9.32604 10.1647 9.36983C10.3299 9.40865 10.471 9.48407 10.5876 9.59579L14.0001 13.0156L17.4199 9.60316C17.5366 9.48649 17.6727 9.40865 17.8283 9.36983C17.9886 9.32604 18.149 9.32604 18.3095 9.36983C18.4748 9.40865 18.6157 9.48892 18.7324 9.61044C18.8587 9.72711 18.9414 9.86804 18.9803 10.0333C19.0192 10.1938 19.0192 10.3542 18.9803 10.5146C18.9414 10.675 18.8612 10.8135 18.7397 10.9302L15.3345 14.3427L18.7397 17.7624C18.8612 17.8791 18.9414 18.0177 18.9803 18.1782C19.0192 18.3385 19.0192 18.5014 18.9803 18.6667C18.9414 18.8271 18.8587 18.9656 18.7324 19.0823C18.6157 19.2038 18.4748 19.2865 18.3095 19.3302C18.149 19.3691 17.9886 19.3691 17.8283 19.3302C17.6727 19.2913 17.5366 19.2111 17.4199 19.0896L14.0001 15.6771L10.5876 19.0968C10.471 19.2086 10.3299 19.2865 10.1647 19.3302C10.0043 19.3691 9.84144 19.3691 9.67615 19.3302C9.51571 19.2865 9.3772 19.2062 9.26052 19.0896Z" fill="#B9D043" class="pathWhite" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_108_563">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                </svg>
+
+                <h2>Оставьте свой номер - <span class="green-color">мы перезвоним</span></h2>
+
+                <form action="" class="modal__form" id="modalForm">
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" placeholder="ваше имя" required>
+                        <p>как к вам обращаться?</p>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" name="tel" id="tel" placeholder="+7 (___) ___-__-__" required>
+                        <p>ваш номер телефона</p>
+                    </div>
+
+                    <button type="submit" class="consultation__image-link">
+                        жду звонка
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.08998 13.78H9.17998V20.98C9.17998 22.66 10.09 23 11.2 21.74L18.77 13.14C19.7 12.09 19.31 11.22 17.9 11.22H14.81V4.02C14.81 2.34 13.9 2 12.79 3.26L5.21998 11.86C4.29998 12.92 4.68998 13.78 6.08998 13.78Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                </form>
+
+                <img src="assets/images/form_image.png" alt="form_image">
+            </div>
+
+            <div class="modal__container afterSubmit" id="afterSubmit">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal__closeIcon" id="closeModalAfter">
+                    <g clip-path="url(#clip0_108_563)">
+                      <path d="M14 0.5C21.4558 0.5 27.5 6.54416 27.5 14C27.5 21.4558 21.4558 27.5 14 27.5C6.54416 27.5 0.5 21.4558 0.5 14C0.5 6.54416 6.54416 0.5 14 0.5Z" stroke="#B9D043" />
+                      <path d="M9.26052 19.0896C9.13899 18.968 9.05878 18.8271 9.01988 18.6667C8.981 18.5014 8.981 18.3385 9.01988 18.1782C9.05878 18.0177 9.13655 17.8791 9.25322 17.7624L12.673 14.3427L9.25322 10.9302C9.13655 10.8135 9.05878 10.675 9.01988 10.5146C8.981 10.3542 8.981 10.1938 9.01988 10.0333C9.05878 9.86804 9.13899 9.72468 9.26052 9.60316C9.3772 9.48649 9.51571 9.40865 9.67615 9.36983C9.84144 9.32604 10.0043 9.32604 10.1647 9.36983C10.3299 9.40865 10.471 9.48407 10.5876 9.59579L14.0001 13.0156L17.4199 9.60316C17.5366 9.48649 17.6727 9.40865 17.8283 9.36983C17.9886 9.32604 18.149 9.32604 18.3095 9.36983C18.4748 9.40865 18.6157 9.48892 18.7324 9.61044C18.8587 9.72711 18.9414 9.86804 18.9803 10.0333C19.0192 10.1938 19.0192 10.3542 18.9803 10.5146C18.9414 10.675 18.8612 10.8135 18.7397 10.9302L15.3345 14.3427L18.7397 17.7624C18.8612 17.8791 18.9414 18.0177 18.9803 18.1782C19.0192 18.3385 19.0192 18.5014 18.9803 18.6667C18.9414 18.8271 18.8587 18.9656 18.7324 19.0823C18.6157 19.2038 18.4748 19.2865 18.3095 19.3302C18.149 19.3691 17.9886 19.3691 17.8283 19.3302C17.6727 19.2913 17.5366 19.2111 17.4199 19.0896L14.0001 15.6771L10.5876 19.0968C10.471 19.2086 10.3299 19.2865 10.1647 19.3302C10.0043 19.3691 9.84144 19.3691 9.67615 19.3302C9.51571 19.2865 9.3772 19.2062 9.26052 19.0896Z" fill="#B9D043" class="pathWhite" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_108_563">
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                </svg>
+
+                <h2>Письмо ушло! <span class="green-color">скоро перезвоним</span></h2>
+
+                <img src="assets/images/formSubmitted_image.png" alt="form_image">
+
+                <button class="consultation__image-link" id="closeModalBut">
+                    жду звонка
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.08998 13.78H9.17998V20.98C9.17998 22.66 10.09 23 11.2 21.74L18.77 13.14C19.7 12.09 19.31 11.22 17.9 11.22H14.81V4.02C14.81 2.34 13.9 2 12.79 3.26L5.21998 11.86C4.29998 12.92 4.68998 13.78 6.08998 13.78Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+         </div>
+
+         <script>
+            $(document).ready(function() {
+                $('#tel').inputmask('+7 (999) 999-99-99');
+            });
+        </script>
+        <!-- modal -->
+
+        <!-- problems block -->
+         <div class="problems">
+
+            <img src="assets/images/problems_image.png" alt="problems_image" class="block-mobile__image block__title-img">
+
+            <div class="block__title">
+                <h2>проблемы, с которыми мы боремся</h2>
+
+                <img src="assets/images/problems_image.png" alt="problems_image" class="block__title-img">
+            </div>
+
+            <div class="problems__items-list">
+                <div class="problems__item">
+                    <div class="problem__item-title">
+                        <p>низкая скорость или качество разработки</p>
+                    </div>
+
+                    <div class="problem__item-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.13503 19.92H13.77V30.72C13.77 33.24 15.135 33.75 16.8 31.86L28.155 18.96C29.55 17.385 28.965 16.08 26.85 16.08H22.215V5.28C22.215 2.76 20.85 2.25 19.185 4.14L7.83003 17.04C6.45003 18.63 7.03503 19.92 9.13503 19.92Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="problems__item">
+                    <div class="problem__item-title">
+                        <p>Потребность в росте команды и необходимость перестроить процессы под этот рост</p>
+                    </div>
+
+                    <div class="problem__item-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.13503 19.92H13.77V30.72C13.77 33.24 15.135 33.75 16.8 31.86L28.155 18.96C29.55 17.385 28.965 16.08 26.85 16.08H22.215V5.28C22.215 2.76 20.85 2.25 19.185 4.14L7.83003 17.04C6.45003 18.63 7.03503 19.92 9.13503 19.92Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="problems__item">
+                    <div class="problem__item-title">
+                        <p>Необходимость в найме квалифицированных специалистов для повышения качества разработки</p>
+                    </div>
+
+                    <div class="problem__item-icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.13503 19.92H13.77V30.72C13.77 33.24 15.135 33.75 16.8 31.86L28.155 18.96C29.55 17.385 28.965 16.08 26.85 16.08H22.215V5.28C22.215 2.76 20.85 2.25 19.185 4.14L7.83003 17.04C6.45003 18.63 7.03503 19.92 9.13503 19.92Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- problems block -->
+
+        <!-- solutions block -->
+         <div class="solutions" id="solutions">
+
+            <img src="assets/images/solutions_image.png" alt="solutions_image" class="block-mobile__image block__title-img">
+
+            <div class="block__title">
+                <h2>решения, которые мы предлагаем</h2>
+
+                <img src="assets/images/solutions_image.png" alt="problems_image" class="block__title-img">
+            </div>
+
+            <div class="solutions__items-list">
+                <div class="solution__item solution__item-short">
+                    <p>Анализ<br>планирования релизов</p>
+
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="solution__item solution__item-long">
+                    <p>Отчет с текущим<br>описанием процесса</p>
+
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="solution__item solution__item-long">
+                    <p>Указание сильных/слабых сторон Планирование доработок</p>
+
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="solution__item solution__item-short">
+                    <p>Анализ постановки<br>задач в разработку</p>
+
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="solutions__items-list solutions__items-list-small">
+                    <div class="solutions__items-list-left">
+                        <div class="solution__item solution__item-long">
+                            <p>Аудит процесса SDLC от постановки требований до релиза</p>
+        
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="solution__item solution__item-long">
+                            <p>Анализ взаимодействия внутри команды </p>
+        
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="solution__item solution__item-short-tall">
+                        <p>Ревью процессов взаимодействия с заказчиком/продакт оунером</p>
+    
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <button class="solutions__button">
+                        <p>нужно другое решение – подберем !</p>
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#1E323D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.11 23.295L21.39 18L16.11 12.705" stroke="#1E323D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+         </div>
+        <!-- solutions block -->
+
+        <!-- services block -->
+        <div class="services" id="services">
+
+            <img src="assets/images/services_image.png" alt="solutions_image" class="block-mobile__image block__title-img">
+
+            <div class="block__title">
+                <h2>кому подойдут наши услуги</h2>
+                <img src="assets/images/services_image.png" alt="problems_image" class="block__title-img">
+            </div>
+
+            <div class="services__slider-block">
+                <div class="services__slider" id="servicesSlider">
+                    <div class="services__slider-item">
+                        <img src="assets/images/slider_1.png" alt="slider_1" class="slider-item__image">
+                        <p>Небольшим командам, которые хотят масштабироваться</p>
+                    </div>
+                    <div class="services__slider-item">
+                        <img src="assets/images/slider_2.png" alt="slider_1" class="slider-item__image">
+                        <p>Командам, желающим повысить уровень качества своих решений</p>
+                    </div>
+                    <div class="services__slider-item">
+                        <img src="assets/images/slider_3.png" alt="slider_1" class="slider-item__image">
+                        <p>Столкнувшихся с проблемами межкомандного взаимодействия и ищущих решения данных проблем</p>
+                    </div>
+                    <div class="services__slider-item hidden-slide">
+                        <img src="assets/images/slider_4.png" alt="slider_1" class="slider-item__image">
+                        <p>Небольшим командам, которые хотят масштабироваться</p>
+                    </div>
+                </div>
+
+                <div class="services__slider-line">
+                    <div class="slider-line__line"></div>
+                    <div class="slider-line__controller" id="sliderController"></div>
+                </div>
+            </div>
+        </div>
+        <!-- services block -->
+
+        <!-- q&a -->
+        <div class="questions" id="questions">
+
+            <img src="assets/images/questions_image.png" alt="solutions_image" class="block-mobile__image block__title-img">
+
+            <div class="block__title">
+                <h2>самые частые<br>вопросы</h2>
+                <img src="assets/images/questions_image.png" alt="questions_image" class="block__title-img">
+            </div>
+
+            <div class="questions__accordion">
+                <div class="questions__accordion-item">
+                    <div class="accordion-item__text">
+                        <div class="accordion-item__title">
+                            <p>для чего мне обращаться к вам ?</p>
+                        </div>
+
+                        <div class="accordion-item__content">
+                            <p>конечно! мы возьмем на себя найденные ошибки и если что - поможем разработать новый функционал или предложить что-то более интересное и эффективное для вашей сферы!</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion-item__button">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.705 16.1101L18 21.3901L23.295 16.1101" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="questions__accordion-item">
+                    <div class="accordion-item__text">
+                        <div class="accordion-item__title">
+                            <p>вы сможете помочь с доработкой моего продукта ?</p>
+                        </div>
+
+                        <div class="accordion-item__content">
+                            <p>конечно! мы возьмем на себя найденные ошибки и если что - поможем разработать новый функционал или предложить что-то более интересное и эффективное для вашей сферы!</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion-item__button">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.705 16.1101L18 21.3901L23.295 16.1101" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="questions__accordion-item">
+                    <div class="accordion-item__text">
+                        <div class="accordion-item__title">
+                            <p>для чего мне обращаться к вам ?</p>
+                        </div>
+
+                        <div class="accordion-item__content">
+                            <p>конечно! мы возьмем на себя найденные ошибки и если что - поможем разработать новый функционал или предложить что-то более интересное и эффективное для вашей сферы!</p>
+                        </div>
+                    </div>
+
+                    <button class="accordion-item__button">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.705 16.1101L18 21.3901L23.295 16.1101" stroke="#B9D043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- q&a -->
+
+        <!-- footer -->
+         <div class="footer">
+            <img src="assets/images/footer_image.png" alt="solutions_image" class="block-mobile__image block__title-img">
+
+            <div class="footer__content">
+                <img src="assets/images/footer_image.png" alt="footer_image" class="footer__image">
+
+                <p>на этом презентация - вс<span class="green-color">ё</span></p>
+
+                <button class="footer__button">
+                    у меня вопрос
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.08998 13.2799H9.17998V20.4799C9.17998 22.1599 10.09 22.4999 11.2 21.2399L18.77 12.6399C19.7 11.5899 19.31 10.7199 17.9 10.7199H14.81V3.5199C14.81 1.8399 13.9 1.4999 12.79 2.7599L5.21998 11.3599C4.29998 12.4199 4.68998 13.2799 6.08998 13.2799Z" stroke="#B9D043" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+         </div>
+        <!-- footer -->
+
+        <!-- copyright -->
+         <div class="copyright">
+            <img src="assets/images/footer_logo.png" alt="" class="copyright__image">
+
+            <p>© 2014-2024 , “ЭВРИТЭЧ”. Все права сохранены.   Политика конфиденциальности</p>
+         </div>
+        <!-- copyright -->
+
+    </div>
+</body>
+</html>

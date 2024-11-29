@@ -1,0 +1,5 @@
+:root {
+    --background: linear-gradient(180deg, #203541 0%, #192831 100%),
+    linear-gradient(232deg, rgba(255, 255, 255, 0) 0%, rgba(0, 127, 255, 0.48) 100%);
+    --accent-color: #B9D043;
+}
